@@ -1,4 +1,4 @@
-my_dict = {}
+my_dct = {}
 while True:
     print("english dictionary")
     print("\n1.enter the word and definition \n 2.find the definition \n 3.exit""")
@@ -6,11 +6,11 @@ while True:
     if choice == 1:
         word = input("enter the word: ")
         defi = input("enter the definition")
-        my_dict[word]=defi
+        my_dct[word]=defi
         print(word,"is added to dict")
     elif choice == 2:
         word = input("enter the word: ")
-        if word in my_dict:
+        if word in my_dct:
             print("the definition of word is : ",defi)
         else:
             print("word not found")
