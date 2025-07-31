@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 def main():
     expenses = {}
     while True:
-        expense_name = input("enter the name of the expense: ")
-        if expense_name == 'done':
+        expenses_name = input("enter the name of the expense: ")
+        if expenses_name == 'done':
             break
         expense_amount = input("enter the expense amount: ")
-        expenses[expense_name] = expense_amount
+        expenses[expenses_name] = expense_amount
     plot_expenses(expenses)
 
 def plot_expenses(expenses):
